@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+
+    --primary-font: "Work Sans", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--primary-font);
+    min-height: 100vh;
+}
+
+h1 {
+    display: flex;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+h1 img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+hr {
+    margin: 20px 0;
+    border-color: rgba(211, 211, 211, 0.25);
+}
+
+.main_div {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    width: 600px;
+}
+
+.dropdown_question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px
+}
+
+.dropdown_anwser {
+    font-size: 14px;
+    color: var(--grayish-purple);
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 600ms linear;
+}
+
+.minus_button {
+    display: none;
+}
+
+.background-desktop, .background-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
